@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styling untuk WebKit browser (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Warna latar belakang track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Warna thumb */
+    border-radius: 4px; /* Membuat thumb membulat */
+  }
+  
+  /* Hover effect pada thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Styling untuk Firefox (opsional, menggunakan properti standar) */
+  /* Perhatikan bahwa styling Firefox terbatas */
+  /* Untuk Firefox Quantum 57 ke atas */
+  * {
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+  }
